@@ -1,75 +1,16 @@
-window.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', () => {
+    const navigationLinks = document.querySelectorAll('.site-navigation a[href^="#"], .hero-actions a[href^="#"], .inline-arrow[href^="#"], .site-footer a[href^="#"]');
 
-    const sidebarWrapper = document.getElementById('sidebar-wrapper');
-    let scrollToTopVisible = false;
-    // Closes the sidebar menu
-    const menuToggle = document.body.querySelector('.menu-toggle');
-    menuToggle.addEventListener('click', event => {
-        event.preventDefault();
-        sidebarWrapper.classList.toggle('active');
-        _toggleMenuIcon();
-        menuToggle.classList.toggle('active');
-    })
+    navigationLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            const target = document.querySelector(link.getAttribute('href'));
 
-    // Closes responsive menu when a scroll trigger link is clicked
-    var scrollTriggerList = [].slice.call(document.querySelectorAll('#sidebar-wrapper .js-scroll-trigger'));
-    scrollTriggerList.map(scrollTrigger => {
-        scrollTrigger.addEventListener('click', () => {
-            sidebarWrapper.classList.remove('active');
-            menuToggle.classList.remove('active');
-            _toggleMenuIcon();
-        })
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
     });
-
-    function _toggleMenuIcon() {
-        const menuToggleBars = document.body.querySelector('.menu-toggle > .fa-bars');
-        const menuToggleTimes = document.body.querySelector('.menu-toggle > .fa-xmark');
-        if (menuToggleBars) {
-            menuToggleBars.classList.remove('fa-bars');
-            menuToggleBars.classList.add('fa-xmark');
-        }
-        if (menuToggleTimes) {
-            menuToggleTimes.classList.remove('fa-xmark');
-            menuToggleTimes.classList.add('fa-bars');
-        }
-    }
-
-    // Scroll to top button appear
-    document.addEventListener('scroll', () => {
-        const scrollToTop = document.body.querySelector('.scroll-to-top');
-        if (document.documentElement.scrollTop > 100) {
-            if (!scrollToTopVisible) {
-                fadeIn(scrollToTop);
-                scrollToTopVisible = true;
-            }
-        } else {
-            if (scrollToTopVisible) {
-                fadeOut(scrollToTop);
-                scrollToTopVisible = false;
-            }
-        }
-    })
-})
-
-function fadeOut(el) {
-    el.style.opacity = 1;
-    (function fade() {
-        if ((el.style.opacity -= .1) < 0) {
-            el.style.display = "none";
-        } else {
-            requestAnimationFrame(fade);
-        }
-    })();
-};
-
-function fadeIn(el, display) {
-    el.style.opacity = 0;
-    el.style.display = display || "block";
-    (function fade() {
-        var val = parseFloat(el.style.opacity);
-        if (!((val += .1) > 1)) {
-            el.style.opacity = val;
-            requestAnimationFrame(fade);
-        }
-    })();
-};
+});
