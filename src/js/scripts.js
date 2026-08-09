@@ -71,6 +71,33 @@ const articles = [
     category: "metodo",
     image: "projeto-gestao-xarticle-hero.webp",
     summary: "Como estruturamos sprints de 1 a 3 semanas para entregar valor incremental e manter o alinhamento com o negócio."
+  },
+  {
+    id: "mission-artesdosul",
+    file: "mission-artesdosul-xarticle.md",
+    title: "Missão Artes do Sul: desenvolver soluções para internet",
+    tag: "Sobre",
+    category: "sobre",
+    image: "mission-artesdosul-xarticle-hero.webp",
+    summary: "Nosso pilar estratégico focado em escuta, planejamento e tecnologia para tracionar negócios no mundo digital."
+  },
+  {
+    id: "values-artesdosul",
+    file: "values-artesdosul-xarticle.md",
+    title: "Valores Artes do Sul: seis critérios que filtram projetos",
+    tag: "Sobre",
+    category: "sobre",
+    image: "values-artesdosul-xarticle-hero.webp",
+    summary: "Qualidade auditável, transparência, flexibilidade e prazo como compromissos tangíveis na engenharia de software."
+  },
+  {
+    id: "vision-artesdosul",
+    file: "vision-artesdosul-xarticle.md",
+    title: "Visão Artes do Sul: inovação confiável para prosperar",
+    tag: "Sobre",
+    category: "sobre",
+    image: "vision-artesdosul-xarticle-hero.webp",
+    summary: "Excelência pós-deploy, inovação com testes práticos e portfólio verificável como evidências de sucesso digital."
   }
 ];
 
