@@ -12456,3 +12456,35 @@ body::after {
     box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
   }
 }
+.special-cta-card {
+  border: 1px dashed rgba(255, 107, 53, 0.4) !important;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(139, 92, 246, 0.03) 100%) !important;
+}
+.special-cta-card:hover {
+  border-style: solid !important;
+  border-color: var(--accent-orange) !important;
+  box-shadow: 0 15px 30px rgba(255, 107, 53, 0.15) !important;
+}
+.special-cta-card:hover .cta-logo-glow i {
+  transform: scale(1.1) rotate(-5deg);
+  text-shadow: 0 0 20px var(--accent-orange);
+}
+
+.cta-gradient-bg {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%) !important;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.cta-gradient-bg .cta-logo-glow {
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.cta-gradient-bg .cta-logo-glow i {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tag-cta {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+  color: var(--accent-purple) !important;
+}

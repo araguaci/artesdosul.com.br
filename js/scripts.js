@@ -244,6 +244,34 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
       showroomGrid.appendChild(card);
     });
+
+    // Card permanente de CTA: Veja nosso portfolio completo
+    const ctaCard = document.createElement('div');
+    ctaCard.className = `col-md-6 col-lg-4 d-flex portfolio-card-wrapper cta-portfolio-wrapper`;
+    ctaCard.innerHTML = `
+      <div class="portfolio-card w-100 special-cta-card">
+        <div class="card-image-wrapper cta-gradient-bg d-flex align-items-center justify-content-center text-center">
+          <div class="cta-logo-glow">
+            <i class="fas fa-briefcase fa-3x text-orange mb-2"></i>
+            <div class="text-mono small text-cyan">https://artesdosul.com/showcase</div>
+          </div>
+          <div class="card-image-overlay"></div>
+        </div>
+        <div class="card-content d-flex flex-column justify-content-between">
+          <div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="card-tag tag-cta">Vitrine</span>
+            </div>
+            <h4 class="card-title">Veja nosso portfólio completo</h4>
+            <p class="card-text">Confira todos os sistemas sob medida, landings premium e soluções prontas forjadas pelo nosso estúdio no hub de showcase.</p>
+          </div>
+          <a href="https://www.artesdosul.com/showcase/" target="_blank" rel="noopener noreferrer" class="btn btn-accent-glow mt-3 text-center d-flex align-items-center justify-content-center py-2">
+            Explorar Showcase <i class="fas fa-external-link-alt ms-2"></i>
+          </a>
+        </div>
+      </div>
+    `;
+    showroomGrid.appendChild(ctaCard);
     
     // Adiciona eventos de clique nos botões para abrir os dossiers
     document.querySelectorAll('.open-dossier-btn').forEach(btn => {
