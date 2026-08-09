@@ -1,182 +1,366 @@
 doctype html
-html(lang='en')
+html(lang='pt-BR')
 
     head
 
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description' content='')
-        meta(name='author' content='')
+        meta(name='description' content='Artes do Sul: Studio digital de criação de websites personalizados, PWAs e sistemas sob medida com design ultra-premium e alta performance.')
+        meta(name='author' content='Artes do Sul')
+        
+        // Meta tags Open Graph / Redes Sociais
+        meta(property='og:title' content='Artes do Sul • Studio Digital')
+        meta(property='og:description' content='Experiências online memoráveis forjadas com design premium, velocidade de carregamento e método.')
+        meta(property='og:image' content='hotsite/about-artesdosul-xarticle-hero.webp')
+        meta(property='og:url' content='https://artesdosul.com.br')
+        meta(property='og:type' content='website')
 
-        title Stylish Portfolio - Start Bootstrap Template
+        title Artes do Sul • Studio Digital & Dashboard Portfólio
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='manifest', href='manifest.json')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
+        // Font Awesome icons
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
 
-        // Simple line icons
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', rel='stylesheet')
-
-        // Google fonts
+        // Google Fonts
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
         link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css')
+        link(href='https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap' rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
 
-        // Navigation
-        a.menu-toggle.rounded(href='#')
-            i.fas.fa-bars
+        // Top Navigation Header
+        header.top-nav.fixed-top
+            .container.d-flex.align-items-center.justify-content-between.py-3
+                a.logo-brand(href='#page-top')
+                    span.accent-glow ARTES
+                    span.text-white  DO SUL
+                nav.nav-links.d-none.d-md-flex
+                    a.nav-link-item(href='#servicos') Serviços
+                    a.nav-link-item(href='#metodo') Método
+                    a.nav-link-item(href='#showroom') Showroom
+                    a.nav-link-item(href='#aceleracao') Simulador
+                    a.nav-link-item(href='#contato') Contato
+                a.btn.btn-outline-glow.d-none.d-sm-inline-block(href='#contato') Falar com o Studio
+                button.menu-toggle.btn.btn-dark.d-md-none(aria-label='Menu')
+                    i.fas.fa-bars
+
+        // Mobile Sidebar Menu
         nav#sidebar-wrapper
             ul.sidebar-nav
                 li.sidebar-brand
-                    a(href='#page-top') Start Bootstrap
+                    a(href='#page-top') Artes do Sul
                 li.sidebar-nav-item
-                    a(href='#page-top') Home
+                    a.js-scroll-trigger(href='#page-top') Home
                 li.sidebar-nav-item
-                    a(href='#about') About
+                    a.js-scroll-trigger(href='#servicos') Serviços
                 li.sidebar-nav-item
-                    a(href='#services') Services
+                    a.js-scroll-trigger(href='#metodo') Método
                 li.sidebar-nav-item
-                    a(href='#portfolio') Portfolio
+                    a.js-scroll-trigger(href='#showroom') Showroom Dossiês
                 li.sidebar-nav-item
-                    a(href='#contact') Contact
+                    a.js-scroll-trigger(href='#aceleracao') Simulador Growth
+                li.sidebar-nav-item
+                    a.js-scroll-trigger(href='#contato') Contato
 
-        // Header
-        header.masthead.d-flex.align-items-center
-            .container.px-4.px-lg-5.text-center
-                h1.mb-1 Stylish Portfolio
-                h3.mb-5
-                    em A Free Bootstrap Theme by Start Bootstrap
-                a.btn.btn-primary.btn-xl(href='#about') Find Out More
+        // Hero Section (Visual Masterpiece)
+        section.hero-section.d-flex.align-items-center
+            .hero-bg-overlay
+            .container.px-4.position-relative
+                .row.align-items-center
+                    .col-lg-7.text-start
+                        .badge-validation.mb-3
+                            span.pulse-dot
+                            span.badge-text Tecnologia e Performance • Validado
+                        h1.display-title.mb-3
+                            | Arquitetura digital 
+                            br
+                            span.gradient-text sob medida 
+                            | para vencer
+                        p.lead.mb-4.text-muted
+                            | Construímos websites premium, sistemas de alta performance e portais interativos com design sofisticado e foco em conversão.
+                        .d-flex.gap-3.flex-wrap
+                            a.btn.btn-accent-glow.btn-lg(href='#showroom')
+                                i.fas.fa-th-large.me-2
+                                | Explorar Showroom
+                            a.btn.btn-dark-glass.btn-lg(href='#servicos')
+                                | Conhecer Serviços
+                    .col-lg-5.d-none.d-lg-block
+                        .hero-image-card
+                            img(src='hotsite/about-artesdosul-xarticle-hero.webp', alt='Artes do Sul Digital Art', class='img-fluid rounded-4 shadow-lg border border-secondary')
+                            .image-card-caption
+                                span.text-mono workspace://artesdosul-art
 
-        // About
-        section#about.content-section.bg-light
-            .container.px-4.px-lg-5.text-center
-                .row.gx-4.gx-lg-5.justify-content-center
-                    .col-lg-10
-                        h2 Stylish Portfolio is the perfect theme for your next project!
-                        p.lead.mb-5
-                            | This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            a(href='https://unsplash.com/') Unsplash
-                            | !
-                        a.btn.btn-dark.btn-xl(href='#services') What We Offer
+        // Serviços Section (6 Cards)
+        section#servicos.services-section.py-5
+            .container.px-4
+                .section-header.text-center.mb-5
+                    span.section-badge Soluções
+                    h2.section-title Nossos Serviços
+                    p.section-subtitle O que oferecemos para destacar sua marca no mercado digital
+                
+                .row.g-4
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-laptop-code
+                            h3.service-title Websites & Landing Pages
+                            p.service-desc Interfaces responsivas, layouts pensados no usuário e funis otimizados para converter visitas em clientes de verdade.
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-chart-pie
+                            h3.service-title Sistemas & Dashboards
+                            p.service-desc Painéis de controle robustos, visualização analítica limpa e sistemas customizados para gerenciar sua operação.
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-search-dollar
+                            h3.service-title Otimização SEO
+                            p.service-desc Estruturação técnica avançada e tags semânticas para posicionar seu site nas primeiras páginas do Google.
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-mobile-alt
+                            h3.service-title Mobile-First & PWA
+                            p.service-desc Aplicações web desenvolvidas para telas de smartphones, com suporte offline e comportamento de app nativo.
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-cloud
+                            h3.service-title Gestão em Cloud
+                            p.service-desc Configuração de infraestrutura moderna, deploys rápidos, alta segurança e monitoramento contínuo da sua aplicação.
+                    .col-md-6.col-lg-4
+                        .service-card
+                            .service-icon-box
+                                i.fas.fa-robot
+                            h3.service-title Integração de IA & Automação
+                            p.service-desc Conexão com modelos de inteligência artificial (LLMs), criação de agentes e fluxos automatizados de processos.
 
-        // Services
-        section#services.content-section.bg-primary.text-white.text-center
-            .container.px-4.px-lg-5
-                .content-section-heading
-                    h3.text-secondary.mb-0 Services
-                    h2.mb-5 What We Offer
-                .row.gx-4.gx-lg-5
-                    .col-lg-3.col-md-6.mb-5.mb-lg-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-screen-smartphone
-                        h4
-                            strong Responsive
-                        p.text-faded.mb-0 Looks great on any screen size!
-                    .col-lg-3.col-md-6.mb-5.mb-lg-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-pencil
-                        h4
-                            strong Redesigned
-                        p.text-faded.mb-0 Freshly redesigned for Bootstrap 5.
-                    .col-lg-3.col-md-6.mb-5.mb-md-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-like
-                        h4
-                            strong Favorited
-                        p.text-faded.mb-0
-                            | Millions of users
-                            i.fas.fa-heart
-                            | Start Bootstrap!
-                    .col-lg-3.col-md-6
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-mustache
-                        h4
-                            strong Question
-                        p.text-faded.mb-0 I mustache you a question...
+        // Método Section (8 passos)
+        section#metodo.method-section.py-5
+            .container.px-4
+                .section-header.text-center.mb-5
+                    span.section-badge Sem Mágica
+                    h2.section-title Nossa Metodologia
+                    p.section-subtitle Oito etapas claras da concepção da ideia até o suporte contínuo
+                
+                .timeline-wrapper
+                    .row.g-3
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 01
+                                h4.step-title Ideia
+                                p.step-desc Mapeamos a visão inicial e avaliamos sua viabilidade técnica imediata.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 02
+                                h4.step-title Pesquisa
+                                p.step-desc Estudamos concorrentes e validamos a melhor stack para o produto.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 03
+                                h4.step-title Protótipo
+                                p.step-desc Esboçamos a estrutura de wireframe para alinhar fluxos de usabilidade.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 04
+                                h4.step-title Design
+                                p.step-desc Damos cor e forma à interface, aplicando identidade premium Cyber-Growth.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 05
+                                h4.step-title Código
+                                p.step-desc Desenvolvemos com código limpo, otimizado para carregamento veloz.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 06
+                                h4.step-title Revisão
+                                p.step-desc Realizamos auditorias de qualidade para garantir a aderência ao planejado.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 07
+                                h4.step-title Teste
+                                p.step-desc Validamos integrações e comportamento em diversos tamanhos de tela.
+                        .col-sm-6.col-md-3
+                            .timeline-step
+                                .step-number 08
+                                h4.step-title Publicação
+                                p.step-desc Lançamos o site de forma segura e iniciamos o suporte técnico permanente.
 
-        // Callout
-        section.callout
-            .container.px-4.px-lg-5.text-center
-                h2.mx-auto.mb-5
-                    | Welcome to
-                    em your
-                    | next website!
-                a.btn.btn-primary.btn-xl(href='https://startbootstrap.com/theme/stylish-portfolio/') Download Now!
+        // Showroom Dashboard (Cases & Insights interativos)
+        section#showroom.showroom-section.py-5
+            .container.px-4
+                .section-header.text-center.mb-4
+                    span.section-badge Showroom
+                    h2.section-title Dashboard de Portfólio
+                    p.section-subtitle Explore em tempo real os dossiês, produtos e métodos do nosso estúdio
+                
+                // Growth Tracker Indicator
+                .progress-tracker-box.mb-5.p-4
+                    .d-flex.flex-column.flex-sm-row.justify-content-between.align-items-start.align-items-sm-center.mb-3
+                        div
+                            h4.tracker-title.mb-1
+                                i.fas.fa-chart-line.text-orange.me-2
+                                | Seu Progresso de Exploração
+                            p.tracker-subtitle.text-muted.mb-0 Seus dossiers lidos são salvos localmente
+                        span#progress-text.badge.badge-progress Loading...
+                    .progress-bar-container
+                        #progress-fill.progress-bar-fill(style='width: 0%')
+                
+                // Search and Filters Controls
+                .controls-row.d-flex.flex-column.flex-md-row.justify-content-between.align-items-stretch.align-items-md-center.gap-3.mb-4
+                    .search-box-wrapper
+                        i.fas.fa-search.search-icon
+                        input#search-input.form-control.search-input(type='text', placeholder='Buscar dossiês, ferramentas ou conceitos...')
+                    .filters-container.d-flex.flex-wrap.gap-2
+                        button.btn.filter-btn.active(data-filter='all') Todos
+                        button.btn.filter-btn(data-filter='sobre') Sobre nós
+                        button.btn.filter-btn(data-filter='metodo') Métodos
+                        // button.btn.filter-btn(data-filter='ferramentas') Ferramentas
+                        // button.btn.filter-btn(data-filter='insights') Insights
+                
+                // Showroom Grid
+                #showroom-grid.row.g-4
+                    // Injetado via Javascript
 
-        // Portfolio
-        section#portfolio.content-section
-            .container.px-4.px-lg-5
-                .content-section-heading.text-center
-                    h3.text-secondary.mb-0 Portfolio
-                    h2.mb-5 Recent Projects
-                .row.gx-0
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Stationary
-                                    p.mb-0 A yellow pencil with envelopes on a clean, blue backdrop!
-                            img.img-fluid(src='assets/img/portfolio-1.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Ice Cream
-                                    p.mb-0 A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!
-                            img.img-fluid(src='assets/img/portfolio-2.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Strawberries
-                                    p.mb-0 Strawberries are such a tasty snack, especially with a little sugar on top!
-                            img.img-fluid(src='assets/img/portfolio-3.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Workspace
-                                    p.mb-0 A yellow workspace with some scissors, pencils, and other objects.
-                            img.img-fluid(src='assets/img/portfolio-4.jpg', alt='...')
+        // Speed to Market: Simulador MRR & Churn (SaaS Launchpad)
+        section#aceleracao.simulation-section.py-5
+            .container.px-4
+                .row.align-items-center.g-5
+                    .col-lg-5
+                        .section-header.text-start.mb-4
+                            span.section-badge Speed to Market
+                            h2.section-title SaaS Launchpad
+                            p.section-subtitle Simule a Aceleração do seu Negócio Digital
+                        p.text-muted
+                            | Criamos MVPs robustos em tempo recorde (~3 semanas) para tracionar sua ideia antes que o mercado mude. Simule ao lado como a receita recorrente e o controle do Churn impactam seu faturamento em 12 meses.
+                        .sim-benefits.mt-4
+                            .d-flex.align-items-center.gap-2.mb-2
+                                i.fas.fa-check.text-green
+                                span Validação rápida de ideias no mercado
+                            .d-flex.align-items-center.gap-2.mb-2
+                                i.fas.fa-check.text-green
+                                span Layout limpo e otimizado com ferramentas úteis
+                            .d-flex.align-items-center.gap-2
+                                i.fas.fa-check.text-green
+                                span Integrações de billing e funis prontas para usar
+                    .col-lg-7
+                        .simulator-box.p-4.rounded-4.border.border-secondary
+                            h3.sim-title.mb-4
+                                i.fas.fa-calculator.text-cyan.me-2
+                                | Simulador Financeiro Recorrente
+                            
+                            .slider-container.mb-4
+                                .d-flex.justify-content-between.mb-2
+                                    label.slider-label MRR Inicial (Receita Mensal Recorrente)
+                                    span#mrr-value.slider-value.text-orange R$ 10.000
+                                input#slider-mrr.form-range(type='range', min='1000', max='100000', step='1000', value='10000')
+                            
+                            .slider-container.mb-4
+                                .d-flex.justify-content-between.mb-2
+                                    label.slider-label Taxa de Churn Estimada (Cancelamento Mensal)
+                                    span#churn-value.slider-value.text-cyan 5%
+                                input#slider-churn.form-range(type='range', min='1', max='20', step='1', value='5')
+                            
+                            .results-grid.row.g-3.mb-4
+                                .col-sm-6
+                                    .result-card
+                                        span.result-label MRR Projetado (12 meses)
+                                        h4#final-mrr.result-value R$ 0
+                                .col-sm-6
+                                    .result-card
+                                        span.result-label Receita Perdida com Churn
+                                        h4#revenue-lost.result-value.text-danger R$ 0
+                                .col-12
+                                    span#acceleration-text.text-mono.text-green.small
+                                        | Aceleração de crescimento calculada...
+                            
+                            // Gráfico de Barras SVG/CSS
+                            .chart-container.mt-4
+                                span.text-mono.small.text-muted.mb-2.d-block workspace://mrr-projection-chart
+                                #simulator-chart.d-flex.align-items-end.gap-1
 
-        // Call to Action
-        section.content-section.bg-primary.text-white
-            .container.px-4.px-lg-5.text-center
-                h2.mb-4 The buttons below are impossible to resist...
-                a.btn.btn-xl.btn-light.me-4(href='#!') Click Me!
-                a.btn.btn-xl.btn-dark(href='#!') Look at Me!
+        // Contato Section
+        section#contato.contact-section.py-5
+            .container.px-4
+                .section-header.text-center.mb-5
+                    span.section-badge Conexão
+                    h2.section-title Fale Conosco
+                    p.section-subtitle Tem uma ideia ou quer revisar seu site atual? Deixe uma mensagem.
+                
+                .row.justify-content-center
+                    .col-lg-8
+                        .contact-form-box.p-4.p-sm-5.rounded-4.border.border-secondary
+                            .terminal-header.mb-4.d-flex.align-items-center.justify-content-between
+                                .d-flex.gap-2
+                                    span.terminal-dot.dot-red
+                                    span.terminal-dot.dot-yellow
+                                    span.terminal-dot.dot-green
+                                span.terminal-title.text-mono contact@artesdosul:~$
+                            
+                            form(action='#', method='POST')
+                                .row.g-4
+                                    .col-md-6
+                                        .form-group
+                                            label.form-label.text-mono(for='form-name') Nome
+                                            input#form-name.form-control.contact-input(type='text', placeholder='Seu nome ou empresa', required)
+                                    .col-md-6
+                                        .form-group
+                                            label.form-label.text-mono(for='form-email') E-mail
+                                            input#form-email.form-control.contact-input(type='email', placeholder='seu@email.com', required)
+                                    .col-12
+                                        .form-group
+                                            label.form-label.text-mono(for='form-service') Serviço Desejado
+                                            select#form-service.form-select.contact-input
+                                                option(value='website') Website / Landing Page Premium
+                                                option(value='dashboard') Sistema Customizado / Dashboard
+                                                option(value='mvp') MVP Brasil (Prazo curto 3 semanas)
+                                                option(value='seo') Otimização SEO ou Consultoria
+                                                option(value='ia') Automação de IA / Processos
+                                    .col-12
+                                        .form-group
+                                            label.form-label.text-mono(for='form-msg') Mensagem
+                                            textarea#form-msg.form-control.contact-input(rows='4', placeholder='Conte-nos brevemente sobre sua ideia ou necessidade...', required)
+                                    .col-12.text-end
+                                        button.btn.btn-accent-glow.btn-lg(type='submit')
+                                            i.fas.fa-paper-plane.me-2
+                                            | Enviar Proposta
 
-        // Map
-        #contact.map
-            iframe(src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
-            br
-            small
-                a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
+        // Footer Section (Branded Signature)
+        footer.footer-section.py-4.text-center
+            .container.px-4
+                hr.footer-divider.mb-4
+                .d-flex.flex-column.flex-md-row.justify-content-between.align-items-center.gap-3
+                    p.footer-copyright.mb-0.text-muted
+                        | &copy; 2026 Artes do Sul. Todos os direitos reservados.
+                    p.footer-signature.mb-0
+                        | Uma criação 
+                        a.signature-link(href='https://artesdosul.com/' target='_blank' rel='noopener noreferrer') @artesdosul
+                a.scroll-to-top.rounded(href='#page-top')
+                    i.fas.fa-angle-up
 
-        // Footer
-        footer.footer.text-center
-            .container.px-4.px-lg-5
-                ul.list-inline.mb-5
-                    li.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='#!')
-                            i.icon-social-facebook
-                    li.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='#!')
-                            i.icon-social-twitter
-                    li.list-inline-item
-                        a.social-link.rounded-circle.text-white(href='#!')
-                            i.icon-social-github
-                p.text-muted.small.mb-0 Copyright &copy; Your Website 2022
+        // Dossier Detail Drawer (Gaveta Lateral Slide-over)
+        #dossier-drawer.dossier-drawer
+            .drawer-header-wrapper
+                .drawer-header.d-flex.justify-content-between.align-items-center
+                    h3#drawer-title.drawer-title Dossiê do Projeto
+                    button#drawer-close.btn.btn-close-drawer(aria-label='Fechar')
+                        i.fas.fa-times
+            .drawer-hero-wrapper
+                img#drawer-hero.drawer-hero-img(src='', alt='')
+                .drawer-hero-overlay
+            #drawer-body.drawer-body
+                // Conteúdo do arquivo markdown é injetado aqui via JS
 
-        // Scroll to Top Button
-        a.scroll-to-top.rounded(href='#page-top')
-            i.fas.fa-angle-up
+        // Overlay desfocado para quando a gaveta estiver ativa
+        #drawer-overlay.drawer-overlay
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')

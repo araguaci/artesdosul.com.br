@@ -1,193 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Stylish Portfolio - Start Bootstrap Template</title>
+        <meta name="description" content="Artes do Sul: Studio digital de criação de websites personalizados, PWAs e sistemas sob medida com design ultra-premium e alta performance." />
+        <meta name="author" content="Artes do Sul" />
+        <!-- Meta tags Open Graph / Redes Sociais-->
+        <meta property="og:title" content="Artes do Sul • Studio Digital" />
+        <meta property="og:description" content="Experiências online memoráveis forjadas com design premium, velocidade de carregamento e método." />
+        <meta property="og:image" content="hotsite/about-artesdosul-xarticle-hero.webp" />
+        <meta property="og:url" content="https://artesdosul.com.br" />
+        <meta property="og:type" content="website" />
+        <title>Artes do Sul • Studio Digital & Dashboard Portfólio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
+        <link rel="manifest" href="manifest.json" />
+        <!-- Font Awesome icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Stylish Portfolio</h1>
-                <h3 class="mb-5"><em>A Free Bootstrap Theme by Start Bootstrap</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+        <!-- Top Navigation Header-->
+        <header class="top-nav fixed-top">
+            <div class="container d-flex align-items-center justify-content-between py-3">
+                <a class="logo-brand" href="#page-top">
+                    <span class="accent-glow">ARTES</span>
+                    <span class="text-white">DO SUL</span>
+                </a>
+                <nav class="nav-links d-none d-md-flex">
+                    <a class="nav-link-item" href="#servicos">Serviços</a>
+                    <a class="nav-link-item" href="#metodo">Método</a>
+                    <a class="nav-link-item" href="#showroom">Showroom</a>
+                    <a class="nav-link-item" href="#aceleracao">Simulador</a>
+                    <a class="nav-link-item" href="#contato">Contato</a>
+                </nav>
+                <a class="btn btn-outline-glow d-none d-sm-inline-block" href="#contato">Falar com o Studio</a>
+                <button class="menu-toggle btn btn-dark d-md-none" aria-label="Menu"><i class="fas fa-bars"></i></button>
             </div>
         </header>
-        <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                        <p class="lead mb-5">
-                            This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            <a href="https://unsplash.com/">Unsplash</a>
-                            !
-                        </p>
-                        <a class="btn btn-dark btn-xl" href="#services">What We Offer</a>
+        <!-- Mobile Sidebar Menu-->
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">Artes do Sul</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#servicos">Serviços</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#metodo">Método</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#showroom">Showroom Dossiês</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#aceleracao">Simulador Growth</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Hero Section (Visual Masterpiece)-->
+        <section class="hero-section d-flex align-items-center">
+            <div class="hero-bg-overlay"></div>
+            <div class="container px-4 position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-start">
+                        <div class="badge-validation mb-3">
+                            <span class="pulse-dot"></span>
+                            <span class="badge-text">Tecnologia e Performance • Validado</span>
+                        </div>
+                        <h1 class="display-title mb-3">
+                            Arquitetura digital
+                            <br />
+                            <span class="gradient-text">sob medida</span>
+                            para vencer
+                        </h1>
+                        <p class="lead mb-4 text-muted">Construímos websites premium, sistemas de alta performance e portais interativos com design sofisticado e foco em conversão.</p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-accent-glow btn-lg" href="#showroom">
+                                <i class="fas fa-th-large me-2"></i>
+                                Explorar Showroom
+                            </a>
+                            <a class="btn btn-dark-glass btn-lg" href="#servicos">Conhecer Serviços</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="hero-image-card">
+                            <img class="img-fluid rounded-4 shadow-lg border border-secondary" src="hotsite/about-artesdosul-xarticle-hero.webp" alt="Artes do Sul Digital Art" />
+                            <div class="image-card-caption"><span class="text-mono">workspace://artesdosul-art</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Services</h3>
-                    <h2 class="mb-5">What We Offer</h2>
+        <!-- Serviços Section (6 Cards)-->
+        <section class="services-section py-5" id="servicos">
+            <div class="container px-4">
+                <div class="section-header text-center mb-5">
+                    <span class="section-badge">Soluções</span>
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-subtitle">O que oferecemos para destacar sua marca no mercado digital</p>
                 </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-laptop-code"></i></div>
+                            <h3 class="service-title">Websites & Landing Pages</h3>
+                            <p class="service-desc">Interfaces responsivas, layouts pensados no usuário e funis otimizados para converter visitas em clientes de verdade.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-chart-pie"></i></div>
+                            <h3 class="service-title">Sistemas & Dashboards</h3>
+                            <p class="service-desc">Painéis de controle robustos, visualização analítica limpa e sistemas customizados para gerenciar sua operação.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-search-dollar"></i></div>
+                            <h3 class="service-title">Otimização SEO</h3>
+                            <p class="service-desc">Estruturação técnica avançada e tags semânticas para posicionar seu site nas primeiras páginas do Google.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="service-title">Mobile-First & PWA</h3>
+                            <p class="service-desc">Aplicações web desenvolvidas para telas de smartphones, com suporte offline e comportamento de app nativo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-cloud"></i></div>
+                            <h3 class="service-title">Gestão em Cloud</h3>
+                            <p class="service-desc">Configuração de infraestrutura moderna, deploys rápidos, alta segurança e monitoramento contínuo da sua aplicação.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card">
+                            <div class="service-icon-box"><i class="fas fa-robot"></i></div>
+                            <h3 class="service-title">Integração de IA & Automação</h3>
+                            <p class="service-desc">Conexão com modelos de inteligência artificial (LLMs), criação de agentes e fluxos automatizados de processos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Callout-->
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+        <!-- Método Section (8 passos)-->
+        <section class="method-section py-5" id="metodo">
+            <div class="container px-4">
+                <div class="section-header text-center mb-5">
+                    <span class="section-badge">Sem Mágica</span>
+                    <h2 class="section-title">Nossa Metodologia</h2>
+                    <p class="section-subtitle">Oito etapas claras da concepção da ideia até o suporte contínuo</p>
                 </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
+                <div class="timeline-wrapper">
+                    <div class="row g-3">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">01</div>
+                                <h4 class="step-title">Ideia</h4>
+                                <p class="step-desc">Mapeamos a visão inicial e avaliamos sua viabilidade técnica imediata.</p>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">02</div>
+                                <h4 class="step-title">Pesquisa</h4>
+                                <p class="step-desc">Estudamos concorrentes e validamos a melhor stack para o produto.</p>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">03</div>
+                                <h4 class="step-title">Protótipo</h4>
+                                <p class="step-desc">Esboçamos a estrutura de wireframe para alinhar fluxos de usabilidade.</p>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">04</div>
+                                <h4 class="step-title">Design</h4>
+                                <p class="step-desc">Damos cor e forma à interface, aplicando identidade premium Cyber-Growth.</p>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">05</div>
+                                <h4 class="step-title">Código</h4>
+                                <p class="step-desc">Desenvolvemos com código limpo, otimizado para carregamento veloz.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">06</div>
+                                <h4 class="step-title">Revisão</h4>
+                                <p class="step-desc">Realizamos auditorias de qualidade para garantir a aderência ao planejado.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">07</div>
+                                <h4 class="step-title">Teste</h4>
+                                <p class="step-desc">Validamos integrações e comportamento em diversos tamanhos de tela.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="timeline-step">
+                                <div class="step-number">08</div>
+                                <h4 class="step-title">Publicação</h4>
+                                <p class="step-desc">Lançamos o site de forma segura e iniciamos o suporte técnico permanente.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+        <!-- Showroom Dashboard (Cases & Insights interativos)-->
+        <section class="showroom-section py-5" id="showroom">
+            <div class="container px-4">
+                <div class="section-header text-center mb-4">
+                    <span class="section-badge">Showroom</span>
+                    <h2 class="section-title">Dashboard de Portfólio</h2>
+                    <p class="section-subtitle">Explore em tempo real os dossiês, produtos e métodos do nosso estúdio</p>
+                </div>
+                <!-- Growth Tracker Indicator-->
+                <div class="progress-tracker-box mb-5 p-4">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
+                        <div>
+                            <h4 class="tracker-title mb-1">
+                                <i class="fas fa-chart-line text-orange me-2"></i>
+                                Seu Progresso de Exploração
+                            </h4>
+                            <p class="tracker-subtitle text-muted mb-0">Seus dossiers lidos são salvos localmente</p>
+                        </div>
+                        <span class="badge badge-progress" id="progress-text">Loading...</span>
+                    </div>
+                    <div class="progress-bar-container"><div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div></div>
+                </div>
+                <!-- Search and Filters Controls-->
+                <div class="controls-row d-flex flex-column flex-md-row justify-content-between align-items-stretch align-items-md-center gap-3 mb-4">
+                    <div class="search-box-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input class="form-control search-input" id="search-input" type="text" placeholder="Buscar dossiês, ferramentas ou conceitos..." />
+                    </div>
+                    <div class="filters-container d-flex flex-wrap gap-2">
+                        <button class="btn filter-btn active" data-filter="all">Todos</button>
+                        <button class="btn filter-btn" data-filter="sobre">Sobre nós</button>
+                        <button class="btn filter-btn" data-filter="metodo">Métodos</button>
+                        <!-- button.btn.filter-btn(data-filter='ferramentas') Ferramentas-->
+                        <!-- button.btn.filter-btn(data-filter='insights') Insights-->
+                    </div>
+                </div>
+                <!-- Showroom Grid-->
+                <div class="row g-4" id="showroom-grid"><!-- Injetado via Javascript--></div>
             </div>
         </section>
-        <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
+        <!-- Speed to Market: Simulador MRR & Churn (SaaS Launchpad)-->
+        <section class="simulation-section py-5" id="aceleracao">
+            <div class="container px-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <div class="section-header text-start mb-4">
+                            <span class="section-badge">Speed to Market</span>
+                            <h2 class="section-title">SaaS Launchpad</h2>
+                            <p class="section-subtitle">Simule a Aceleração do seu Negócio Digital</p>
+                        </div>
+                        <p class="text-muted">Criamos MVPs robustos em tempo recorde (~3 semanas) para tracionar sua ideia antes que o mercado mude. Simule ao lado como a receita recorrente e o controle do Churn impactam seu faturamento em 12 meses.</p>
+                        <div class="sim-benefits mt-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Validação rápida de ideias no mercado</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Layout limpo e otimizado com ferramentas úteis</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-check text-green"></i>
+                                <span>Integrações de billing e funis prontas para usar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="simulator-box p-4 rounded-4 border border-secondary">
+                            <h3 class="sim-title mb-4">
+                                <i class="fas fa-calculator text-cyan me-2"></i>
+                                Simulador Financeiro Recorrente
+                            </h3>
+                            <div class="slider-container mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="slider-label">MRR Inicial (Receita Mensal Recorrente)</label>
+                                    <span class="slider-value text-orange" id="mrr-value">R$ 10.000</span>
+                                </div>
+                                <input class="form-range" id="slider-mrr" type="range" min="1000" max="100000" step="1000" value="10000" />
+                            </div>
+                            <div class="slider-container mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="slider-label">Taxa de Churn Estimada (Cancelamento Mensal)</label>
+                                    <span class="slider-value text-cyan" id="churn-value">5%</span>
+                                </div>
+                                <input class="form-range" id="slider-churn" type="range" min="1" max="20" step="1" value="5" />
+                            </div>
+                            <div class="results-grid row g-3 mb-4">
+                                <div class="col-sm-6">
+                                    <div class="result-card">
+                                        <span class="result-label">MRR Projetado (12 meses)</span>
+                                        <h4 class="result-value" id="final-mrr">R$ 0</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="result-card">
+                                        <span class="result-label">Receita Perdida com Churn</span>
+                                        <h4 class="result-value text-danger" id="revenue-lost">R$ 0</h4>
+                                    </div>
+                                </div>
+                                <div class="col-12"><span class="text-mono text-green small" id="acceleration-text">Aceleração de crescimento calculada...</span></div>
+                            </div>
+                            <!-- Gráfico de Barras SVG/CSS-->
+                            <div class="chart-container mt-4">
+                                <span class="text-mono small text-muted mb-2 d-block">workspace://mrr-projection-chart</span>
+                                <div class="d-flex align-items-end gap-1" id="simulator-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contato Section-->
+        <section class="contact-section py-5" id="contato">
+            <div class="container px-4">
+                <div class="section-header text-center mb-5">
+                    <span class="section-badge">Conexão</span>
+                    <h2 class="section-title">Fale Conosco</h2>
+                    <p class="section-subtitle">Tem uma ideia ou quer revisar seu site atual? Deixe uma mensagem.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form-box p-4 p-sm-5 rounded-4 border border-secondary">
+                            <div class="terminal-header mb-4 d-flex align-items-center justify-content-between">
+                                <div class="d-flex gap-2">
+                                    <span class="terminal-dot dot-red"></span>
+                                    <span class="terminal-dot dot-yellow"></span>
+                                    <span class="terminal-dot dot-green"></span>
+                                </div>
+                                <span class="terminal-title text-mono">contact@artesdosul:~$</span>
+                            </div>
+                            <form action="#" method="POST">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-mono" for="form-name">Nome</label>
+                                            <input class="form-control contact-input" id="form-name" type="text" placeholder="Seu nome ou empresa" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-mono" for="form-email">E-mail</label>
+                                            <input class="form-control contact-input" id="form-email" type="email" placeholder="seu@email.com" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label text-mono" for="form-service">Serviço Desejado</label>
+                                            <select class="form-select contact-input" id="form-service">
+                                                <option value="website">Website / Landing Page Premium</option>
+                                                <option value="dashboard">Sistema Customizado / Dashboard</option>
+                                                <option value="mvp">MVP Brasil (Prazo curto 3 semanas)</option>
+                                                <option value="seo">Otimização SEO ou Consultoria</option>
+                                                <option value="ia">Automação de IA / Processos</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="form-label text-mono" for="form-msg">Mensagem</label>
+                                            <textarea class="form-control contact-input" id="form-msg" rows="4" placeholder="Conte-nos brevemente sobre sua ideia ou necessidade..." required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end">
+                                        <button class="btn btn-accent-glow btn-lg" type="submit">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Enviar Proposta
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section (Branded Signature)-->
+        <footer class="footer-section py-4 text-center">
+            <div class="container px-4">
+                <hr class="footer-divider mb-4" />
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <p class="footer-copyright mb-0 text-muted">&copy; 2026 Artes do Sul. Todos os direitos reservados.</p>
+                    <p class="footer-signature mb-0">
+                        Uma criação
+                        <a class="signature-link" href="https://artesdosul.com/" target="_blank" rel="noopener noreferrer">@artesdosul</a>
+                    </p>
+                </div>
+                <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
             </div>
         </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Dossier Detail Drawer (Gaveta Lateral Slide-over)-->
+        <div class="dossier-drawer" id="dossier-drawer">
+            <div class="drawer-header-wrapper">
+                <div class="drawer-header d-flex justify-content-between align-items-center">
+                    <h3 class="drawer-title" id="drawer-title">Dossiê do Projeto</h3>
+                    <button class="btn btn-close-drawer" id="drawer-close" aria-label="Fechar"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="drawer-hero-wrapper">
+                <img class="drawer-hero-img" id="drawer-hero" src="" alt="" />
+                <div class="drawer-hero-overlay"></div>
+            </div>
+            <div class="drawer-body" id="drawer-body"><!-- Conteúdo do arquivo markdown é injetado aqui via JS--></div>
+        </div>
+        <!-- Overlay desfocado para quando a gaveta estiver ativa-->
+        <div class="drawer-overlay" id="drawer-overlay"></div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
