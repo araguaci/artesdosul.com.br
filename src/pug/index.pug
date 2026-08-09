@@ -2,7 +2,6 @@ doctype html
 html(lang='pt-BR')
 
     head
-
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description' content='Artes do Sul: Studio digital de criação de websites personalizados, PWAs e sistemas sob medida com design ultra-premium e alta performance.')
@@ -33,7 +32,16 @@ html(lang='pt-BR')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
+    body#page-top.site-shell
+        nav.site-navigation
+            a.brand-mark(href='#page-top', aria-label='Artes do Sul, início')
+                span.brand-monogram A
+                span.brand-name Artes do Sul
+            .navigation-links
+                a(href='#solucoes') Soluções
+                a(href='#processo') Método
+                a(href='#projetos') Projetos
+            a.nav-contact(href='#contato') Vamos conversar
 
         // Top Navigation Header
         header.top-nav.fixed-top
