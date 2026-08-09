@@ -1,0 +1,22 @@
+{
+  "name": "Artes do Sul • Studio Digital",
+  "short_name": "Artes do Sul",
+  "description": "Studio de criação de experiências digitais de alta performance e design premium.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#ff6b35",
+  "orientation": "any",
+  "categories": [
+    "business",
+    "developer"
+  ],
+  "icons": [
+    {
+      "src": "assets/pwa-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
