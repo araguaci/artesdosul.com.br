@@ -79,4 +79,4 @@ Se os três níveis não desalinham, desconfie de qualquer orçamento único.
 - Apps: [artesdosul.com/apps/](https://artesdosul.com/apps/)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*Links diretos (MVP Brasil, Saúde Livre, insights): primeiro reply deste post.*
+💻 Showroom interativo onde design de ponta e códigos funcionais operam em harmonia! ✨

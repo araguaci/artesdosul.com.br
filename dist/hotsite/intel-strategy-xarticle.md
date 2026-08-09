@@ -55,4 +55,4 @@ Se no passo 3 você ainda estiver no mesmo shell, a situation room pagou o cliqu
 - Apps: [modelos.artesdosul.com/apps/](https://modelos.artesdosul.com/apps/)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*Links diretos dos seis nós em `tools/`: primeiro reply deste post.*
+🎯 Planejamento tático e inteligência de dados para liderar o mercado! 🚀

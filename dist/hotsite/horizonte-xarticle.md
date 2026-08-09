@@ -98,4 +98,4 @@ A diferença entre “conteúdo denso” e “sistema utilizável” aparece na 
 - Análise Preditiva: [horizonte-analise-preditiva.html](https://horizonte.artesdosul.com/horizonte-analise-preditiva.html)
 - Estúdio: [artesdosul.com](https://artesdosul.com/)
 
-*Lista completa de docs, JSON e landing de recursos: primeiro reply deste post.*
+🧭 O mapa estratégico completo para guiar o crescimento da sua marca! 📈

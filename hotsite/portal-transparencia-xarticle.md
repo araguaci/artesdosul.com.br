@@ -56,4 +56,4 @@ Se no passo 3 você ainda estiver no mesmo shell, o hub fez o trabalho de um por
 - Apps: [modelos.artesdosul.com/apps/](https://modelos.artesdosul.com/apps/)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*Links diretos das seis visões em `tools/`: primeiro reply deste post.*
+📊 Informações transparentes e acessibilidade total para gerar confiança! 🌐

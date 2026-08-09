@@ -53,4 +53,4 @@ Esses seis eixos dizem onde o Artes do Sul puxa a corda quando a corda aperta.
 - Visão: [artesdosul.com/vision/](https://artesdosul.com/vision/)
 - Contato: [artesdosul.com/contact/](https://artesdosul.com/contact/)
 
-*Showcase e portfólio: primeiro reply deste post.*
+🎯 Parceria real, código limpo e transparência absoluta para o seu negócio crescer! 💎

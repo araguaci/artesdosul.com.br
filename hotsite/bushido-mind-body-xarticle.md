@@ -64,4 +64,4 @@ Se na sexta você ainda não abriu o dojo, o problema é agenda — mas o hub j�
 - Hub: [Bushido Mind & Body](https://modelos.artesdosul.com/apps/bushido-mind-body.html)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*Links diretos das cinco ferramentas em `tools/`: primeiro reply deste post.*
+🥋 Disciplina, foco e alto rendimento moldando a sua presença digital! 🌟

@@ -53,4 +53,4 @@ Se o passo 4 mudar uma decisão real, o protocolo pagou o clique.
 - Landing no hub: [modelos.artesdosul.com/apps/human3.0.html](https://modelos.artesdosul.com/apps/human3.0.html)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*URLs e CTA de mapeamento: primeiro reply deste post.*
+🧠 Design centrado em pessoas para gerar conexões reais e resultados extraordinários! 🚀

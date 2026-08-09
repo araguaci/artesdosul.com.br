@@ -63,4 +63,4 @@ O app vive ao lado de dashboards, health-tech e toolbelts de dev — prova de qu
 - Landing no hub: [artesdosul.com/apps/numerologia.html](https://artesdosul.com/apps/numerologia.html)
 - Studio: [artesdosul.com](https://artesdosul.com/)
 
-*Landing do hub e detalhes de privacidade/FAQ: primeiro reply deste post.*
+✨ Decisões estratégicas guiadas por precisão, clareza e inteligência de dados! 🧭
