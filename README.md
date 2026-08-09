@@ -1,71 +1,82 @@
-# [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/theme/stylish-portfolio/)
+# Artes do Sul • Studio Digital & Dashboard Portfólio
 
-[Stylish Portfolio](https://startbootstrap.com/theme/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
+Este é o site oficial do **Artes do Sul**, um estúdio de criação digital focado em websites ultra-premium, PWAs e sistemas sob medida de alta performance.
 
-## Preview
+O projeto foi totalmente remodelado aplicando a identidade **Cyber-Growth** e transformando a antiga estrutura estática em uma Single Page Application (SPA) interativa com carregamento dinâmico de dossiers.
 
-[![Stylish Portfolio Preview](https://assets.startbootstrap.com/img/screenshots/themes/stylish-portfolio.png)](https://startbootstrap.github.io/startbootstrap-stylish-portfolio/)
+---
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-stylish-portfolio/)**
+## 🎨 Design System: Cyber-Growth
 
-## Status
+A estética do estúdio é inspirada em interfaces modernas de alta performance (como Linear e Stripe) integrando as paletas da skill `artesdosul`:
+- **Fundo Escuro**: `#050505` como cor base e cartões translúcidos com blur (`rgba(20, 20, 20, 0.75)`).
+- **Acentos Vibrantes**: Laranja (`#ff6b35` para ações), Ciano (`#00d9ff` para códigos/tecnologia), Verde (`#10b981` para sucesso/validação) e Roxo (`#8b5cf6` para simulações).
+- **Tipografia Premium**: `Bricolage Grotesque` para títulos display e `Plus Jakarta Sans` para o corpo.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-stylish-portfolio/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-stylish-portfolio.svg)](https://www.npmjs.com/package/startbootstrap-stylish-portfolio)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-stylish-portfolio/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-stylish-portfolio)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-stylish-portfolio/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-stylish-portfolio?type=dev)
+---
 
-## Download and Installation
+## 🚀 Funcionalidades Integradas
 
-To begin using this template, choose one of the following options to get started:
+### 1. Showroom Dashboard (Portfólio de Dossiês)
+- **Carregamento Dinâmico**: O JS lê os dossiês originais em Markdown (`.md`) da pasta `hotsite/` via requisições assíncronas (`fetch`) em tempo real.
+- **Renderizador de Markdown**: Parser customizado leve em Javascript para converter sintaxes de títulos, blockquotes, listas, links e blocos de código com destaque ciano.
+- **Drawer Slide-Over**: Exibição imersiva dos dossiês em uma gaveta lateral fluida sem recarregar a página.
+- **Search & Filter**: Busca por texto em tempo real e filtros de categorias (Sobre nós, Métodos, Ferramentas, Insights).
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/stylish-portfolio/)
-* Install via npm: `npm i startbootstrap-stylish-portfolio`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-stylish-portfolio.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-stylish-portfolio)
+### 2. Growth Tracker (Persistência)
+- Barra de progresso interativa que exibe a porcentagem de dossiês que você já explorou.
+- Monitora os dossiers lidos e os persiste localmente via `localStorage`. Os cards lidos ganham uma etiqueta visual de "Explorado".
 
-## Usage
+### 3. SaaS Launchpad (Simulador de Aceleração)
+- Simulador interativo com sliders de **MRR Inicial** e taxa de **Churn** (cancelamento).
+- Projeção financeira de crescimento em 12 meses acumulada.
+- Gráfico de barras responsivo gerado em tempo real com efeitos de glow.
 
-### Basic Usage
+### 4. PWA First (Offline & Standalone)
+- Configuração de `manifest.json` com ícone personalizado em alta resolução para instalação mobile standalone.
+- Service Worker (`sw.js`) ativo configurado com estratégia de cache para suporte offline a recursos estruturais e dossiês.
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+---
 
-### Advanced Usage
+## 📂 Estrutura do Código-Fonte
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+- `hotsite/` — Os dossiês originais do estúdio em Markdown e suas respectivas imagens de capa `-hero.webp`.
+- `src/pug/` — Arquivo de estrutura [index.pug](file:///D:/artesdosul/artesdosul.com.br/src/pug/index.pug).
+- `src/scss/` — Folhas de estilo SCSS organizadas com o Design System em [styles.scss](file:///D:/artesdosul/artesdosul.com.br/src/scss/styles.scss).
+- `src/js/` — Lógicas da SPA (banco de dados, buscador, simulador, markdown render) em [scripts.js](file:///D:/artesdosul/artesdosul.com.br/src/js/scripts.js).
+- `src/assets/` — Recursos de PWA (`manifest.json`, `sw.js` e o ícone `pwa-icon.png`).
+- `scripts/` — Scripts utilitários de build em Node.js.
+- `dist/` — Pasta final compilada gerada pelo build.
 
-#### npm Scripts
+---
 
-* `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-* `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-* `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-* `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-* `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-* `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-* `npm run start:debug` runs the project in debug mode
-* `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+## 🛠️ Como Executar Localmente
 
-You must have npm installed in order to use this build environment.
+### 1. Pré-requisitos
+Certifique-se de possuir o Node.js e o NPM instalados em sua máquina.
 
-## Bugs and Issues
+### 2. Instalação de Dependências
+Instale as ferramentas e utilitários de build executando na pasta raiz:
+```bash
+npm install
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/stylish-portfolio/).
+### 3. Execução em Desenvolvimento
+Para rodar a aplicação localmente com Live Reload e recompilação em tempo real de Pug e SCSS, execute:
+```bash
+npm start
+```
+A aplicação abrirá no seu navegador em `http://localhost:3000`.
 
-## About
+### 4. Compilação de Produção
+Para compilar todos os arquivos otimizados e prontos para deploy na pasta `dist/`, execute:
+```bash
+npm run build
+```
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+---
 
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
+## 📜 Licença e Assinatura
 
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-* <https://davidmiller.io>
-* <https://twitter.com/davidmillerhere>
-* <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2022 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE) license.
+Desenvolvido por **@artesdosul** • <https://artesdosul.com/>.
+Código disponível sob a licença MIT.

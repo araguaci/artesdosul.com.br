@@ -1,7 +1,7 @@
 {
-    "title": "Stylish Portfolio",
-    "name": "startbootstrap-stylish-portfolio",
-    "version": "6.0.5",
+    "title": "Artes do Sul",
+    "name": "artesdosul-com-br",
+    "version": "1.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -9,32 +9,28 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
-        "dev": "npm run start",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A stylish portfolio HTML template built with Bootstrap",
+    "description": "Studio digital de criação de websites personalizados, PWAs e sistemas de alta performance.",
     "keywords": [
         "css",
         "sass",
         "html",
         "responsive",
         "theme",
-        "template"
+        "pwa",
+        "cyber-growth"
     ],
-    "homepage": "https://startbootstrap.com/theme/stylish-portfolio",
+    "homepage": "https://artesdosul.com.br",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/araguaci/artesdosul.com.br/issues"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "Artes do Sul",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-stylish-portfolio.git"
+        "url": "https://github.com/araguaci/artesdosul.com.br.git"
     },
     "dependencies": {
         "bootstrap": "5.1.3"
