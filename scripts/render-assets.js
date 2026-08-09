@@ -17,7 +17,8 @@ module.exports = function renderAssets() {
     }
     sh.cp('-R', upath.resolve(hotsiteSourcePath, '*'), hotsiteDestPath);
 
-    // Copiar manifesto e service worker para a raiz de dist/
+    // Copiar manifesto, service worker e CNAME para a raiz de dist/
     sh.cp(upath.resolve(sourcePath, 'manifest.json'), destPath);
     sh.cp(upath.resolve(sourcePath, 'sw.js'), destPath);
+    sh.cp(upath.resolve(sourcePath, 'CNAME'), destPath);
 };
